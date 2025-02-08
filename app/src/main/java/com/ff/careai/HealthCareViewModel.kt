@@ -27,7 +27,7 @@ class HealthcareViewModel : ViewModel() {
                     You are a helpful and knowledgeable healthcare assistant. Provide accurate, 
                     professional medical information while making it clear that you're not replacing 
                     professional medical advice. Always encourage users to consult healthcare 
-                    professionals for serious concerns.
+                    professionals for serious concerns. Keep the answers consise and correct
                     
                     User query: $userMessage
                 """.trimIndent()
