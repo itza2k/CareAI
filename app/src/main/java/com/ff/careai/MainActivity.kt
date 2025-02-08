@@ -114,7 +114,9 @@ class MainActivity : ComponentActivity() {
                             ProfileScreen(userProfileManager = userProfileManager)
                         }
                         composable(NavigationDestination.ProfileSetup.route) {
+                            val profileSetupNavController = rememberNavController()
                             ProfileSetupScreen(
+                                navController = profileSetupNavController,
                                 userProfileManager = userProfileManager,
                                 onProfileSetupComplete = {
                                     navController.navigate(NavigationDestination.Chat.route) {
